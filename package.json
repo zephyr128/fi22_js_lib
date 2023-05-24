@@ -2,7 +2,7 @@
   "name": "fi22_js_lib",
   "version": "1.0.0",
   "description": "A simple library",
-  "main": "Sources/index.js",
+  "main": "Sources/Fi22/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
