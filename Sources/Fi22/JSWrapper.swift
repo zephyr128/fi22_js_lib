@@ -7,23 +7,23 @@
 
 import JavaScriptCore
 
-struct JSLibHandler {
-    
-    static var shared = JSLibHandler()
+public struct JSLibHandler {
+
+    public static var shared = JSLibHandler()
     private var lib = "fi22_lib"
     private var context = JSContext()
-    
-    init() {
+
+    public init() {
         let scriptURL = Bundle.main.url(forResource: "fi22_lib", withExtension: "js")!
         let script = try? String(contentsOf: scriptURL)
         context?.evaluateScript(script)
     }
-    
+
     public func getInPlayDelay() -> Int {
         if let context {
             return context.evaluateScript("getInPlayDelay()").toNumber().intValue
         }
         return 77
     }
-    
+
 }
