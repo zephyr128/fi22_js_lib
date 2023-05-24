@@ -16,7 +16,10 @@ let package = Package(
         .target(
             name: "Fi22",
             dependencies: [],
-            resources: [.process("Resources/index.js")]),
+            resources: [
+                .copy("Resources"),
+                .process("Resources/index.js")
+            ]),
         
     ]
 )
