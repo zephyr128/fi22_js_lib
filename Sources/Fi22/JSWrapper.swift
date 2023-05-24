@@ -10,11 +10,10 @@ import JavaScriptCore
 public struct JSLibHandler {
 
     public static var shared = JSLibHandler()
-    private var lib = "fi22_lib"
     private var context = JSContext()
 
     public init() {
-        let scriptURL = Bundle.main.url(forResource: "fi22_lib", withExtension: "js")!
+        let scriptURL = Bundle.main.url(forResource: "index", withExtension: "js")!
         let script = try? String(contentsOf: scriptURL)
         context?.evaluateScript(script)
     }
