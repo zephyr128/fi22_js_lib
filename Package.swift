@@ -10,13 +10,9 @@ let package = Package(
         .watchOS(.v6)
     ],
     products: [
-        .library(name: "Fi22", targets: ["Fi22"]),
+        .library(name: "Fi22", targets: ["Fi22"])
     ],
     targets: [
-        .target(
-            name: "Fi22",
-            dependencies: [],
-            resources: [.copy("Resources")]),
-        
+        .target(name: "Fi22")
     ]
 )
