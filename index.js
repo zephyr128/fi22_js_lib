@@ -1,7 +1,7 @@
 'use strict';
 
 function getInPlayDelay() {
-    return 100
+    return 45
 }
 
 module.exports = {
