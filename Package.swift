@@ -13,6 +13,10 @@ let package = Package(
         .library(name: "Fi22", targets: ["Fi22"]),
     ],
     targets: [
-        .target(name: "Fi22"),
+        .target(
+            name: "Fi22",
+            dependencies: [],
+            resources: [.copy("JS")]),
+        
     ]
 )
