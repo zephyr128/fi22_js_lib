@@ -17,8 +17,7 @@ let package = Package(
             name: "Fi22",
             dependencies: [],
             resources: [
-                .copy("Resources"),
-                .process("Resources/index.js")
+                .copy("Resources")
             ]),
         
     ]
