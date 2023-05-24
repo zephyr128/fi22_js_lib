@@ -16,9 +16,7 @@ let package = Package(
         .target(
             name: "Fi22",
             dependencies: [],
-            resources: [
-                .copy("Resources")
-            ]),
+            resources: [.copy("Resources")]),
         
     ]
 )
